@@ -19,7 +19,7 @@
     "@types/react-dom": "^17.0.0",
     "@types/react-router": "^5.1.11",
     "@types/react-router-dom": "^5.1.7",
-    "@iosecret/cli": "^1.0.22"
+    "@iosecret/cli": "^1.0.0"
   },
   "license": "ISC"
 }

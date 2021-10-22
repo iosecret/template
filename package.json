@@ -1,6 +1,6 @@
 {
   "name": "@iosecret/template",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "脚手架模板管理",
   "keywords": [
     "react",
@@ -30,7 +30,8 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && tsc --project tsconfig.json --outDir dist/ --module COMMONJS"
+    "build": "npm run clean && tsc --project tsconfig.json --outDir dist/ --module COMMONJS",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "fs-extra": "^10.0.0",

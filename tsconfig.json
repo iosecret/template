@@ -2,14 +2,13 @@
   "compilerOptions": {
     "sourceMap": false,
     "importHelpers": true,
+    "declaration": true,
     "module": "ES2015",
     "outDir": "dist/",
     "baseUrl": ".",
     "target": "esnext",
     "lib": ["esnext", "dom"],
     "allowJs": true,
-    "jsx": "react",
-    "strict": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -19,5 +18,5 @@
     "suppressImplicitAnyIndexErrors": true,
     "downlevelIteration": true,
   },
-  "compileOnSave": false
+  "include": ["./lib/"]
 }
