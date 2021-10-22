@@ -1,0 +1,26 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "preinstall": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@types/node": "^16.7.1",
+    "eslint-config-iosecret-react": "^1.0.0",
+    "husky": "^7.0.1",
+    "lerna": "^4.0.0"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,js,jsx}": [
+      "git add .",
+      "prettier --write",
+      "eslint --fix"
+    ]
+  }
+}
