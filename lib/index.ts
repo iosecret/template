@@ -119,7 +119,7 @@ export const generateTemplate = (
 
   // 是否 lerna 模板
   const isLernaTemplate = templateKey === 'lerna';
-  const copyInDirs = ['iosecret', 'commitlint', 'eslint', 'prettier', 'git'];
+  const copyInDirs = ['iosecret', 'commitlint', 'eslint', 'prettier'];
   const tempConfig: typeof templateConfig.packages.react =
     templateConfig.packages[templateKey];
 

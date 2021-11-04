@@ -17,40 +17,17 @@ export const templateConfig = {
   packages: {
     lerna: {
       path: 'lerna',
-      dependencies: [
-        '.vscode',
-        '.husky',
-        'commitlint',
-        'eslint',
-        'prettier',
-        'git',
-      ],
+      dependencies: ['.vscode', '.husky', 'commitlint', 'eslint', 'prettier'],
     },
-    react: { path: 'react', dependencies: ['iosecret', 'git'] },
-    'react-ts': { path: 'react-ts', dependencies: ['iosecret', 'git'] },
+    react: { path: 'react', dependencies: ['iosecret'] },
+    'react-ts': { path: 'react-ts', dependencies: ['iosecret'] },
     'react-rule': {
       path: 'react-rule',
-      dependencies: [
-        '.vscode',
-        '.husky',
-        'iosecret',
-        'commitlint',
-        'eslint',
-        'prettier',
-        'git',
-      ],
+      dependencies: ['.vscode', '.husky', 'iosecret', 'commitlint', 'eslint', 'prettier'],
     },
     'react-ts-rule': {
       path: 'react-ts-rule',
-      dependencies: [
-        '.vscode',
-        '.husky',
-        'iosecret',
-        'commitlint',
-        'eslint',
-        'prettier',
-        'git',
-      ],
+      dependencies: ['.vscode', '.husky', 'iosecret', 'commitlint', 'eslint', 'prettier'],
     },
   },
 };
