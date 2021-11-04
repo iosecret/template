@@ -119,7 +119,7 @@ export const generateTemplate = (
 
   // 是否 lerna 模板
   const isLernaTemplate = templateKey === 'lerna';
-  const copyInDirs = ['iwr', 'commitlint', 'eslint', 'prettier', 'git'];
+  const copyInDirs = ['iosecret', 'commitlint', 'eslint', 'prettier', 'git'];
   const tempConfig: typeof templateConfig.packages.react =
     templateConfig.packages[templateKey];
 
@@ -161,11 +161,8 @@ export const generateTemplate = (
   writeJsonSync(packageJsonPath, toPackageJson, { spaces: 2 });
 
   // 更新配置文件端口
-  const stcConfigFile = join(toRoot, 'iwr.config.js');
-  existsSync(stcConfigFile) &&
-    transferFile(stcConfigFile, stcConfigFile, data =>
-      data.replace(/\{iwr-port\}/g, port),
-    );
+  const stcConfigFile = join(toRoot, 'iosecret.config.js');
+  existsSync(stcConfigFile) && transferFile(stcConfigFile, stcConfigFile, (data) => data.replace(/\{iosecret-port\}/g, port));
 };
 
 /**

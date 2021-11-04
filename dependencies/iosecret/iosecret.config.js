@@ -19,7 +19,7 @@ uriPrefix.forEach(uri => {
 });
 
 module.exports = {
-  port: '{iwr-port}',
+  port: '{iosecret-port}',
   resolvePath: 'src',
   target: './src',
   publicPath: '/',
